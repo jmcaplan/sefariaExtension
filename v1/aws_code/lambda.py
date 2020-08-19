@@ -1,15 +1,6 @@
 import json
 from botocore.vendored import requests
 
-'''
-def is_jastrow_jackpot(obj, source):
-    ref_list = obj["refs"]
-    for ref in ref_list:
-        if ref == source:
-            return True
-    return False
-'''
-
 def is_jastrow_jackpot(obj, source):
     source_tokens = source.split(".")
     if len(source_tokens) > 2:
