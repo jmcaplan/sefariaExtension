@@ -9,4 +9,10 @@ To install the extension, open a Chrome browser and go to chrome://extensions/ a
 
 ## How to use
 Go to the [sefaria website](https://www.sefaria.org/texts) and open a text (for example, [this passage](https://www.sefaria.org/Shabbat.6a?lang=bi) in Tractate Shabbat). Then open the extension:
+
 ![Find Extension](media/find_extension.gif)
+
+### *Version 1 Interface*
+Type in the hebrew word you wish to search, and click 'Search'. If you are lucky enough, you might just stumble upon a 'Jastrow Jackpot':
+
+![Successful Jackpot](media/successful_jackpot)
