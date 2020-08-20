@@ -1,7 +1,6 @@
 import json
 from botocore.vendored import requests
 
-
 def is_jastrow_jackpot(obj, source):
     source_tokens = source.split(".")
     if len(source_tokens) > 2:
