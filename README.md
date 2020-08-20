@@ -15,4 +15,4 @@ Go to the [sefaria website](https://www.sefaria.org/texts) and open a text (for 
 ### *Version 1 Interface*
 Type in the hebrew word you wish to search, and click 'Search'. If you are lucky enough, you might just stumble upon a 'Jastrow Jackpot':
 
-![Successful Jackpot](media/successful_jackpot)
+![Successful Jackpot](media/successful_jackpot.gif)
