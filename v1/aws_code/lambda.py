@@ -28,7 +28,7 @@ def lambda_handler(event, context):
         if obj["parent_lexicon"] == "Jastrow Dictionary":
             result = result + "<div><h3>" + obj["headword"] + ' ' + obj["content"]["senses"][0]["definition"] + "</h3></div>"
             if is_jastrow_jackpot(obj=obj, source=source):
-                result = result + "<div> <h1> THIS WAS A JASTROW JACKPOT!!! </h1> </div>"
+                result = result + "<div> <h1> <mark> THIS WAS A JASTROW JACKPOT!!! </mark> </h1> </div>"
             result = result + "<hr></hr>"
             nothing_found = False
     if nothing_found:
