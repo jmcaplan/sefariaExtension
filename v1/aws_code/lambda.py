@@ -33,6 +33,7 @@ def lambda_handler(event, context):
             nothing_found = False
     if nothing_found:
         result = '<h1> Nothing Found for ' + word + '</h1>'
+    result = result.replace("href=\"", "href=\"https://www.sefaria.org")
     return {
         'statusCode': 200,
         'body': json.dumps(result),
