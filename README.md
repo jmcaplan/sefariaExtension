@@ -9,4 +9,4 @@ To install the extension, open a Chrome browser and go to chrome://extensions/ a
 
 ## How to use
 Go to the [sefaria website](https://www.sefaria.org/texts) and open a text (for example, [this passage](https://www.sefaria.org/Shabbat.6a?lang=bi) in Tractate Shabbat). Then open the extension:
-![Find Extension](media/find_extension)
+![Find Extension](media/find_extension.gif)
