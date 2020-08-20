@@ -1,2 +1,2 @@
 # sefariaExtension
-Project for Sefaria Hackathon 2020
+Project for Sefaria Hackathon 202
