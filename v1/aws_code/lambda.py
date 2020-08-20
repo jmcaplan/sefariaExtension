@@ -11,8 +11,6 @@ def is_jastrow_jackpot(obj, source):
     for ref in ref_list:
         if ':' in ref:
             ref = ref[:ref.find(':')]
-        print("source is " + source)
-        print("ref is " + ref)
         if ref == source:
             return True
     return False
