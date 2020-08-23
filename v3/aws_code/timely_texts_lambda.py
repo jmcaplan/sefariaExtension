@@ -70,13 +70,13 @@ def lambda_handler(event, context):
     halakha = calResponses['calendar_items'][8]['displayValue']['en']
 
     source = event["queryStringParameters"]["source"]
-    sourceResponses = requests.get("https://www.sefaria.org/api/texts/" + source + "?commentary=1").json()  
-    commentaryArray = sourceResponses['commentary']
+    print('source working with is: '+ source)
+    linksArray = requests.get("https://www.sefaria.org/api/links/" + source).json()  
     tanakh_connections = set()
     talmud_connections = set()
     mishna_connections = set()
-    for obj in commentaryArray:
-        if obj['category'] == 'Tanakh' and obj['type'] == "":
+    for obj in linksArray:
+        if obj['category'] == 'Tanakh':
             tanakh_connections.add(obj['ref'])
         elif obj['category'] == 'Talmud':
             talmud_connections.add(obj['ref'])
@@ -101,10 +101,10 @@ def lambda_handler(event, context):
             no_matches_found = False
         if ref_daf == daf_hashavua:
             result = result + "<div>" + 'Congratulations, your source quotes the Talmudic passage (' + ref + ') which is in this week\'s Daf Hashavua!!!' + "</div>"  
-            print('*** Congratulations, your source quotes the Talmudic passage (' + ref + ') which is in this week\'s Daf Hashavua!!!')  
             no_matches_found = False
 
     if no_matches_found:
+        print('made it to no matches found')
         result = "<div> Sorry, your source is not connected to any timely texts! </div>"
    
 
