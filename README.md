@@ -13,6 +13,11 @@ Go to the [sefaria website](https://www.sefaria.org/texts) and open a text (for 
 ![Find Extension](media/find_extension.gif)
 
 ### *Version 1 Interface*
-Type in the hebrew word you wish to search, and click 'Search'. If you are lucky enough, you might just stumble upon a 'Jastrow Jackpot':
+Type in the hebrew word you wish to search, and click 'Search'. You should see the Jastrow Dictionary definitions relevant to your query. If you are lucky enough, you might just stumble upon a 'Jastrow Jackpot':
 
 ![Successful Jackpot](media/successful_jackpot.gif)
+
+### *Version 2 Interface*
+In this version, the search result will appear as an iframe of Sefaria's website:
+
+![Successful Jackpot V2](media/successful_jackpot_v2.gif)
