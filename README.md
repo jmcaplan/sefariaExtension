@@ -16,7 +16,7 @@ Go to the [sefaria website](https://www.sefaria.org/texts) and open a text (for 
 ![Find Extension](media/find_extension.gif)
 
 ### *Version 1 Interface*
-Type in the hebrew word you wish to search, and click 'Search'. You should see the Jastrow Dictionary definitions relevant to your query. If you are lucky enough, you might just stumble upon a 'Jastrow Jackpot':
+Type in the hebrew word you wish to search, and click 'Search'. You should see the Jastrow Dictionary definitions relevant to your query, along with functional links to Sefaria pages. If you are lucky enough, you might just stumble upon a 'Jastrow Jackpot':
 
 ![Successful Jackpot](media/successful_jackpot.gif)
 
