@@ -32,3 +32,12 @@ In this version, the search result will appear as an iframe of Sefaria's website
 With the extension open, click on 'Check Timely Texts' to see if the source currently open is related to any 'Timely Texts.' After the results appear, click 'Clear Timely Texts results' to restart.
 
 ![Successful Timely Texts](media/successful_timely_texts.gif)
+
+## Technical Architecture
+
+### *Sefaria APIs*
+- The 'Jastrow Jackpot' feature utilizes the [Lexicon API](https://github.com/Sefaria/Sefaria-Project/wiki/API-Documentation#lexicon-api)
+- The 'Timely Texts' feature utilizes the [Links API](https://github.com/Sefaria/Sefaria-Project/wiki/API-Documentation#links-api) 
+
+### *AWS Integration*
+- All features work by having the Javascript in the Chrome extension make calls to API Gateway endpoints, which trigger Lambda functions written in Python (3.7) which in turn use the 'requests' library to call the Sefaria APIs (NOTE - this library is currently imported from the built-in botocore.vendored library, and will be depracated January 2021, at which time the library will have to be manually injected). 
