@@ -71,7 +71,7 @@ def lambda_handler(event, context):
 
     source = event["queryStringParameters"]["source"]
     print('source working with is: '+ source)
-    linksArray = requests.get("https://www.sefaria.org/api/links/" + source).json()  
+    linksArray = requests.get("https://www.sefaria.org/api/links/" + source + "?with_text=0").json()  
     tanakh_connections = set()
     talmud_connections = set()
     mishna_connections = set()
