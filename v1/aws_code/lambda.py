@@ -1,6 +1,7 @@
 import json
 from botocore.vendored import requests
 
+
 def is_jastrow_jackpot(obj, source):
     source_tokens = source.split(".")
     if len(source_tokens) > 2:
@@ -25,7 +26,7 @@ def lambda_handler(event, context):
         if obj["parent_lexicon"] == "Jastrow Dictionary":
             result = result + "<div><h3>" + obj["headword"] + ' ' + obj["content"]["senses"][0]["definition"] + "</h3></div>"
             if is_jastrow_jackpot(obj=obj, source=source):
-                result = result + "<div> <h1> <mark> THIS WAS A JASTROW JACKPOT!!! </mark> </h1> </div>"
+                result = result + "<div> <h1> <mark> THIS WAS A JASTROW JACKPOT!!! </mark> <image src=\"https://www.smileysapp.com/gif-emoji/clapping.gif\" alt=\"clapping emoji\" width=\"50\" height=\"50\"></image> </h1> </div>"
             result = result + "<hr></hr>"
             nothing_found = False
     if nothing_found:
