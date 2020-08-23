@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        button {
+            height: 20px;
+            width: 55px;
+            outline: none;
+        }
+    </style>
+    <style>
+        .timelyTextsButton {
+            height: 30px;
+            width: 70%;
+            margin: 0 auto;
+            outline: none;
+            background-color: rgb(191, 191, 226);
+            border-color: beige;
+            font: outline;
+        }
+    </style>
+    <style>
+        body {
+            height: 100px;
+            width: 550px;
+            outline: none;
+            background-color: aliceblue;
+        }
+    </style>
+    <style>
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <image src="images/timelyTextsLogo.jpg" width="100%" height="150"></image>
+    </div>
+    <div>
+        <button id="timelyTextsButton" class="timelyTextsButton"><strong>Check Timely Texts</strong></button>
+        <script src="timelyTexts.js"></script>
+        <h2 id="timelyTextsResult"> </h2>
+    </div>
+
+    <hr>
+    <br>
+
+    <div>
+        <image src="images/jastrowJackpotLogo.jpg" width="100%" height="150"></image>
+    </div>
+    <label for="searchQuery">Jastrow Jackpot Checker:  </label>
+    <input id="searchQuery" type="text">
+
+    <button id="searchButton">Search</button>
+    <script src="popup.js"></script>
+
+    <div id="searchResult"></div>
+
+    <iframe id="sefariaFrame" width="100%" height="300" title="Jastrow"> </iframe>
+
+</body>
+
+</html>
