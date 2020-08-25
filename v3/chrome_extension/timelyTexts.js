@@ -28,8 +28,7 @@ timelyTextsButton.onclick = function() {
                 }
             }
             var client = new HttpClient();
-            https: //2z1wc29i4h.execute-api.us-east-1.amazonaws.com/stage1/timelyTexts?source=Ezekiel.45.14
-                apiURL = 'https://2z1wc29i4h.execute-api.us-east-1.amazonaws.com/stage1/timelyTexts?source=' + currentSource;
+            apiURL = 'https://2z1wc29i4h.execute-api.us-east-1.amazonaws.com/stage1/timelyTexts?source=' + currentSource;
             client.get(apiURL, function(response) {
                 document.getElementById('timelyTextsResult').innerHTML = response.substring(1, response.length - 1);
             });
