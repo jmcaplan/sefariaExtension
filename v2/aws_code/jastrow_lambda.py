@@ -8,6 +8,7 @@ def is_jastrow_jackpot(obj, source):
         source = source_tokens[0] + ' ' + source_tokens[1]
     else:
         source = source.replace('.', ' ')
+    source = source.replace('_',' ')
     ref_list = obj["refs"]
     for ref in ref_list:
         if ':' in ref:
