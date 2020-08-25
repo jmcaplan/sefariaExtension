@@ -1,5 +1,5 @@
 # **I'm Learning Lucky** | Google Chrome Extension
-*A project for Sefaria Hackathon, Summer 2020*
+*A project for [Powered By Sefaria Contest](https://www.sefaria.org/contest), Summer 2020*
 
 ## About
 #### **Concept**
